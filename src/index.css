@@ -5,6 +5,22 @@
   font-family: sans-serif;
 }
 
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4em;
+  color: #ff4500; /* Naranja */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  letter-spacing: 4px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px #000000; /* Sombra de texto */
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1:hover {
+  transform: scale(1.1); /* Escalar ligeramente al pasar el cursor */
+}
+
 body{
   background-color: #37384b;
   color: #fff;
@@ -18,7 +34,8 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .card{

@@ -103,7 +103,7 @@ function App() {
     <div>
       <section>
         <div className="container">
-          <h1>Responsive cards</h1>
+          <h1>GTA SA - Characters</h1>
           <div className="card-container">
             {
               cards.map((card, i) => (
