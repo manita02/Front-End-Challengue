@@ -202,3 +202,44 @@ a {
   box-sizing: border-box;
 }
 
+.quantity{
+  width: 70px;
+  height: 30px;
+  background-color: rgba(76, 96, 133, .2);
+  padding: 5px;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none; 
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+  background: 0 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.qtyInput{
+  width: 40px;
+  border: none;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: #fff;
+  background: 0 0;
+  flex: 1;
+  font-weight: 700;
+}
+
+

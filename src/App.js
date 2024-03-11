@@ -3,7 +3,29 @@
 import { useState } from "react";
 import images from './assets/img/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMinus, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faMinus, faShoppingCart, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { decrement, increment } from './QuantityFunctions';
+
+
+/*
+let qty = document.querySelector("#qtyInput");
+
+function decrement(){
+  if (qty.value <= 1){
+    qty.value = 1;
+  }
+  else{
+    qty.value = parseInt(qty.value) - 1;
+  }
+}
+
+function increment(){
+  qty.value = parseInt(qty.value) + 1;
+}
+
+*/
+
+
 
 function App() {
   const [cards] = useState([
@@ -98,7 +120,10 @@ function App() {
       badge: images.bd_silenciador,
     }
 
-  ])
+  ]);
+
+  const [qty, setQty] = useState(1);
+
   return (
     <div>
       <section>
@@ -108,17 +133,17 @@ function App() {
             {
               cards.map((card, i) => (
                 <div key={i} className="card">
-                  {/* 
+                   
                   <div className="quantity">
-                    <button className="btn minus" type="button">
+                    <button className="btn minus" type="button" onClick={() => decrement(`qtyInput${i}`)}>
                       <FontAwesomeIcon icon={faMinus} />
                     </button>
-                    <input type="text" value="1" id="qtyInput"></input>
-                    <button className="btn minus" type="button">
-                      <FontAwesomeIcon icon={faMinus} />
+                    <input type="text" value="1" id={`qtyInput${i}`} className="qtyInput"></input>
+                    <button className="btn plus" type="button" onClick={() => increment(`qtyInput${i}`)}>
+                      <FontAwesomeIcon icon={faPlus} />
                     </button>
                   </div>
-                  */}
+                  
                   <p className="on-sale">ON SALE</p>
                   <div className="point"></div>
                   <span className="stock-button">In stock</span>
