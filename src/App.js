@@ -3,7 +3,7 @@
 import { useState } from "react";
 import images from './assets/img/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   const [cards] = useState([
@@ -131,6 +131,7 @@ function App() {
                   <div className="card-content">
                   <a href="" className="btn-details">DETAILS</a>
                   <a href="" className="btn-add">ADD</a>
+                  <FontAwesomeIcon className="buy-card" icon={faShoppingCart} />
                     {/*<h3>{ card.title }</h3>
                     
                     <a href="" className="card-button">{card.button}</a>

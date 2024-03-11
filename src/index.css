@@ -159,17 +159,17 @@ a {
   font-family: Roboto, sans-serif;
   padding: 9px;
   font-weight: 500;
-  opacity: .85;
+  opacity: .95;
   position: absolute;
   margin-top: 180px;
   left: 0;
-  margin-left: 32px;
+  margin-left: 28px;
 }
 
 .btn-add{
   border-radius: 4px;
   color: hsla(0, 0%, 100%, .75) !important;
-  background-color:#5762d5;
+  background-color:#6570ef;
   font-size: 12px;
   font-family: Roboto, sans-serif;
   padding: 9px;
@@ -177,7 +177,15 @@ a {
   position: absolute;
   margin-top: 180px;
   left: 0;
-  margin-left: 110px;
+  margin-left: 108px;
+  padding-right: 33px;
+}
+
+.buy-card{
+  position: absolute;
+  bottom: 0;
+  margin-left: 140px;
+  margin-bottom: 34px;
 }
 
 .badge{
