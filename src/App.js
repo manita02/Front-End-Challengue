@@ -120,6 +120,7 @@ function App() {
                   </div>
                   */}
                   <p className="on-sale">ON SALE</p>
+                  <div className="point"></div>
                   <span className="stock-button">In stock</span>
                   <img src={card.img} className="img-product" alt="img" />
                   <p className="product-name">{card.productName}</p>
